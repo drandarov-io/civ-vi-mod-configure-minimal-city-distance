@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Mod id="84f74b4e-5982-4e35-8579-831d98fd226b" version="5">
+    <Properties>
+        <Name>[COLOR:ResGoldLabelCS]Configure Minimal City Distance[ENDCOLOR]</Name>
+        <Description>Creates an option when creating a game to change the minimal distance between two cities under Advanced Options.</Description>
+        <Created>1621332492</Created>
+        <Teaser>Configure minimal distance between two cities.</Teaser>
+        <Author>DahakaMVl</Author>
+        <AffectsSavedGames>1</AffectsSavedGames>
+        <CompatibleVersions>2.0</CompatibleVersions>
+    </Properties>
+
+    <ActionCriteria>
+        <Criteria id="cmcd_0"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>0</Value></ConfigurationValueMatches></Criteria>
+        <Criteria id="cmcd_1"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>1</Value></ConfigurationValueMatches></Criteria>
+        <Criteria id="cmcd_2"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>2</Value></ConfigurationValueMatches></Criteria>
+        <Criteria id="cmcd_3"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>3</Value></ConfigurationValueMatches></Criteria>
+        <Criteria id="cmcd_4"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>4</Value></ConfigurationValueMatches></Criteria>
+        <Criteria id="cmcd_5"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>5</Value></ConfigurationValueMatches></Criteria>
+        <Criteria id="cmcd_6"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>6</Value></ConfigurationValueMatches></Criteria>
+        <Criteria id="cmcd_7"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>7</Value></ConfigurationValueMatches></Criteria>
+        <Criteria id="cmcd_8"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>8</Value></ConfigurationValueMatches></Criteria>
+        <Criteria id="cmcd_9"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>9</Value></ConfigurationValueMatches></Criteria>
+        <Criteria id="cmcd_10"><ConfigurationValueMatches><ConfigurationId>CMCD</ConfigurationId><Group>Game</Group><Value>10</Value></ConfigurationValueMatches></Criteria>
+    </ActionCriteria>
+
+    <FrontEndActions>
+        <UpdateText id="cmcd_text">
+            <File>ConfigureMinimalCityDistance_Text.xml</File>
+        </UpdateText>
+        <UpdateDatabase id="cmcd_core">
+            <File>ConfigureMinimalCityDistance_Core.sql</File>
+        </UpdateDatabase>
+    </FrontEndActions>
+
+    <InGameActions>
+        <UpdateDatabase id="cmcd_0_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_0</Criteria><File>sql/cmcd_0.sql</File></UpdateDatabase>
+        <UpdateDatabase id="cmcd_1_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_1</Criteria><File>sql/cmcd_1.sql</File></UpdateDatabase>
+        <UpdateDatabase id="cmcd_2_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_2</Criteria><File>sql/cmcd_2.sql</File></UpdateDatabase>
+        <UpdateDatabase id="cmcd_3_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_3</Criteria><File>sql/cmcd_3.sql</File></UpdateDatabase>
+        <UpdateDatabase id="cmcd_4_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_4</Criteria><File>sql/cmcd_4.sql</File></UpdateDatabase>
+        <UpdateDatabase id="cmcd_5_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_5</Criteria><File>sql/cmcd_5.sql</File></UpdateDatabase>
+        <UpdateDatabase id="cmcd_6_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_6</Criteria><File>sql/cmcd_6.sql</File></UpdateDatabase>
+        <UpdateDatabase id="cmcd_7_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_7</Criteria><File>sql/cmcd_7.sql</File></UpdateDatabase>
+        <UpdateDatabase id="cmcd_8_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_8</Criteria><File>sql/cmcd_8.sql</File></UpdateDatabase>
+        <UpdateDatabase id="cmcd_9_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_9</Criteria><File>sql/cmcd_9.sql</File></UpdateDatabase>
+        <UpdateDatabase id="cmcd_10_setting"><Properties><LoadOrder>1000</LoadOrder></Properties><Criteria>cmcd_10</Criteria><File>sql/cmcd_10.sql</File></UpdateDatabase>
+    </InGameActions>
+
+    <Files>
+        <File>ConfigureMinimalCityDistance_Core.sql</File>
+        <File>ConfigureMinimalCityDistance_Text.xml</File>
+        <File>sql/cmcd_0.sql</File>
+        <File>sql/cmcd_1.sql</File>
+        <File>sql/cmcd_2.sql</File>
+        <File>sql/cmcd_3.sql</File>
+        <File>sql/cmcd_4.sql</File>
+        <File>sql/cmcd_5.sql</File>
+        <File>sql/cmcd_6.sql</File>
+        <File>sql/cmcd_7.sql</File>
+        <File>sql/cmcd_8.sql</File>
+        <File>sql/cmcd_9.sql</File>
+        <File>sql/cmcd_10.sql</File>
+    </Files>
+</Mod>

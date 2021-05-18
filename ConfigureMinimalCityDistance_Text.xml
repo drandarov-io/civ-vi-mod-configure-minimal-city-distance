@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--Enhanced Civil Infrastructure-->
+<!--Author: DahakaMVl-->
+<GameData>
+    <LocalizedText>
+        <Replace Language="en_US" Tag="LOC_CMCD_NAME">
+            <Text>Minimal City Distance</Text>
+        </Replace>
+        <Replace Language="en_US" Tag="LOC_CMCD_DESCRIPTION">
+            <Text>Minimal distance between two cities</Text>
+        </Replace>
+        <Replace Language="en_US" Tag="LOC_CMCD_HEADER_NAME">
+            <Text>[COLOR_Production]Configure Minimal City Distance Settings[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Language="en_US" Tag="LOC_CMCD_HEADER_DESCRIPTION">
+            <Text>Configure Minimal City Distance Settings by DahakaMVl</Text>
+        </Replace>
+        <Replace Language="en_US" Tag="LOC_CMCD_FOOTER_NAME">
+            <Text>[COLOR_Production]Configure Minimal City Distance Settings End[ENDCOLOR]</Text>
+        </Replace>
+        <Replace Language="en_US" Tag="LOC_CMCD_FOOTER_DESCRIPTION">
+            <Text>Fake Option for padding.</Text>
+        </Replace>
+    </LocalizedText>
+</GameData>
